@@ -54,6 +54,10 @@
         width: 200px;
         height: 60px;
       }
+      a.disabled-button img {
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+      }
       footer {
         background-color: #333;
         color: #fff;
@@ -69,12 +73,22 @@
     <p>Welcome to SCHEDULARA, your personal scheduling assistant!</p>
     <p>SCHEDULARA is currently in beta and available for download on:</p>
     <ul>
-      <li><a class="disabled-button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png" alt="Google Play Store" /></a></li>
-      <li><a class="disabled-button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1024px-Download_on_the_App_Store_Badge.svg.png" alt="App Store" /></a></li>
+      <li>
+        <a class="disabled-button">
+          <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png" alt="Google Play Store" />
+        </a>
+      </li>
+      <li>
+        <a class="disabled-button">
+          <img src="https://cdn1.iconfinder.com/data/icons/app-store-2/512/App_Store-512.png" alt="App Store" />
+        </a>
+      </li>
     </ul>
     <p>Sign up for beta access:</p>
     <ul>
-      <li><a class="button" href="#">Sign up</a></li>
+      <li>
+        <a class="button" href="#">Sign up</a>
+      </li>
     </ul>
     <footer>
       <p>&copy; 2023 SCHEDULARA. All rights reserved.</p>
