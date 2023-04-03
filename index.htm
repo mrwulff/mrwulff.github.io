@@ -1,60 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Download Our App</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		/* Style the Android Market link button */
-		.android-button {
-			display: inline-block;
-			background-color: #3DDC84;
-			color: #fff;
-			font-size: 24px;
-			font-weight: bold;
-			padding: 20px 40px;
-			border-radius: 10px;
-			text-decoration: none;
-			margin-right: 20px;
-			margin-bottom: 20px;
-		}
-
-		/* Style the Apple App Store icon */
-		.apple-icon {
-			display: inline-block;
-			background-color: #FFDC84;
-			color: #fff;
-			font-size: 24px;
-			font-weight: bold;
-			padding: 20px 40px;
-			border-radius: 10px;
-			text-decoration: none;
-			margin-right: 20px;
-			margin-bottom: 20px;
-		}
-
-		/* Style the footer */
-		footer {
-			margin-top: 50px;
-			padding: 20px;
-			background-color: #f2f2f2;
-			text-align: center;
-		}
-	</style>
-</head>
-<body>
-	<!-- Page title -->
-	<h1>Download Our App</h1>
-
-	<!-- Android Market link button -->
-	<a href="https://play.google.com/store/apps/details?id=com.yourcompany.yourapp" class="android-button">Download on Android Market</a>
-
-	<!-- Apple App Store icon -->
-	<a href="https://apps.apple.com/us/app/your-app/id1234567890" class="apple-icon">Download on Apple App store</a>
-
-	<!-- Footer with legalese -->
-	<footer>
-		<p>Copyright &copy; 2023 Your Company.
-		All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
-	</footer>
-</body>
-</html>
+  <head>
+    <title>SCHEDULARA</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        text-align: center;
+      }
+      header {
+        background-color: #333;
+        padding: 20px;
+      }
+      header img {
+        max-width: 100%;
+        height: auto;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      li {
+        margin: 10px;
+      }
+      a.button {
+        display: inline-block;
+        background-color: #007aff;
+        color: white;
+        text-decoration: none;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 200px;
+        height: 60px;
+      }
+      a.button img {
+        width: 100%;
+        height: 100%;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+      .beta-button {
+        display: inline-block;
+        background-color: #555;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 200px;
+        height: 60px;
+        margin: 10px;
+      }
+      .changelog {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://github.com/mrwulff/mrwulff.github.io/raw/main/store/icon.png" alt="SCHEDULARA App" />
+    </header>
+    <h1>SCHEDULARA</h1>
+    <p>Welcome to SCHEDULARA, your personal scheduling assistant!</p>
+    <p>SCHEDULARA is available for download on:</p>
+    <ul>
+      <li>
+        <a class="button" href="https://play.google.com/store/apps/details?id=org.kw.schedulara.kw.schedulara">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png" alt="Google Play Store" />
+        </a>
+      </li>
+      <li>
+        <a class="button" href="https://apps.apple.com/us/app/schedulara/id6446215252">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1024px-Download_on_the_App_Store_Badge.svg.png" alt="App Store" />
+        </a>
+      </li>
+    </ul>
+    <a class="beta-button" href="https://play.google.com/apps/testing/org.kw.schedulara.kw.schedulara">Android Beta</a>
+    <a class="beta-button" href="https://testflight.apple.com/join/elNCq0xy">iOS Beta</a>
+    <p class="changelog">See the <a href="https://github.com/mrwulff/schedulara/releases/">changelog</a> for the latest updates.</p>
+    <footer>
+      <p>&copy; 2023 SCHEDULARA. All rights reserved.</p>
+      <p>Terms of Service | Privacy Policy</p>
+    </
