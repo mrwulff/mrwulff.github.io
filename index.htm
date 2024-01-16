@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>SCHEDULARA</title>
     <style>
       body {
@@ -14,9 +19,22 @@
         padding: 20px;
         font-size: 18px;
         font-weight: bold;
+        cursor: pointer; /* Add cursor pointer for better user experience */
+      }
+      header a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       header p {
         margin: 0;
+      }
+      header img.twitter-logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
       }
       header img {
         max-width: 100%;
@@ -53,29 +71,49 @@
         color: #fff;
         padding: 20px;
       }
-      .beta-button {
-        display: inline-block;
-        background-color: #555;
-        color: #fff;
-        text-decoration: none;
-        padding: 15px 20px;
-        border-radius: 10px;
-        font-size: 20px;
-        font-weight: bold;
-        width: 200px;
-        height: 60px;
-        margin: 10px;
+      .beta-text {
+        font-size: 16px;
+        color: #ccc;
+        margin-top: 10px;
       }
       .changelog {
         margin-top: 20px;
         font-size: 14px;
         color: #ccc;
+        position: relative;
+      }
+      .changelog-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, visibility 0.5s;
+      }
+      .changelog-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .changelog-content {
+        color: #fff;
+        text-align: center;
+        max-width: 80%;
       }
     </style>
   </head>
   <body>
     <header>
-      <p>⚠️ Currently Broken - Being Looked Into ⚠️</p>
+      <a href="https://x.com/Schedulara_app/status/1747162655352357289?s=20" target="_blank">
+        <img class="twitter-logo" src="https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png" alt="Twitter Logo" />
+        <p>⚠️ Currently Broken - Being Looked Into ⚠️</p>
+      </a>
     </header>
     <img src="https://github.com/mrwulff/mrwulff.github.io/raw/main/store/icon.png" alt="SCHEDULARA App" />
     <h1>SCHEDULARA</h1>
@@ -93,12 +131,24 @@
         </a>
       </li>
     </ul>
-    <a class="beta-button" href="https://play.google.com/apps/testing/org.kw.schedulara.kw.schedulara">Android Beta</a>
-    <a class="beta-button" href="https://testflight.apple.com/join/elNCq0xy">iOS Beta</a>
-    <p class="changelog">See the <a href="https://github.com/mrwulff/schedulara/releases/">changelog</a> for the latest updates.</p>
+    <p class="beta-text">Try our beta versions:</p>
+    <p><a href="https://play.google.com/apps/testing/org.kw.schedulara.kw.schedulara">Android Beta</a></p>
+    <p><a href="https://testflight.apple.com/join/elNCq0xy">iOS Beta</a></p>
+    <div class="changelog">
+      <p>See the <a href="#" onclick="toggleChangelog()">changelog</a> for the latest updates.</p>
+      <div class="changelog-overlay" onclick="toggleChangelog()">
+        <div class="changelog-content">
+          <p>2024 Edition:</p>
+          <p>📅 Calendar</p>
+          <p>📓 Field Notes</p>
+          <p>📊 More Graphs!</p>
+        </div>
+      </div>
+    </div>
     <footer>
       <p>&copy; 2023 SCHEDULARA. All rights reserved.</p>
       <p>Terms of Service | Privacy Policy</p>
     </footer>
-  </body>
-</html>
+    <script>
+      function toggleChangelog() {
+        const overlay = document.querySelector
