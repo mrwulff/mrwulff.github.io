@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCHEDULARA</title>
     <style>
       body {
@@ -151,4 +148,9 @@
     </footer>
     <script>
       function toggleChangelog() {
-        const overlay = document.querySelector
+        const overlay = document.querySelector('.changelog-overlay');
+        overlay.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
