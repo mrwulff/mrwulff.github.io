@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rhino Works</title>
+<style>
+:root{
+--bg:#f7f8fc;--card:rgba(255,255,255,.72);--txt:#111827;--muted:#6b7280;
+--a:#5b5df7;--b:#58b7ff;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;background:var(--bg);color:var(--txt)}
+body:before,body:after{content:"";position:fixed;z-index:-1;filter:blur(90px);border-radius:50%}
+body:before{width:340px;height:340px;right:-100px;top:-80px;background:#7c3aed44}
+body:after{width:300px;height:300px;left:-120px;top:450px;background:#38bdf844}
+header{position:sticky;top:0;background:rgba(255,255,255,.7);backdrop-filter:blur(18px);padding:16px 20px;border-bottom:1px solid rgba(0,0,0,.05)}
+.wrap{max-width:430px;margin:auto;padding:20px}
+.logo{display:flex;align-items:center;gap:14px;font-weight:700;font-size:22px}
+.logo img{width:52px;height:52px;border-radius:16px;object-fit:cover}
+.badge{display:inline-block;padding:8px 14px;background:#eef2ff;color:#4f46e5;border-radius:999px;font-weight:700}
+h1{font-size:54px;line-height:.95;margin:18px 0}
+.grad{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+p{font-size:19px;line-height:1.6;color:var(--muted)}
+.store{display:grid;gap:14px;margin:28px 0}
+.store a{text-decoration:none;background:#111;color:#fff;padding:18px;border-radius:22px;text-align:center;font-weight:700}
+.phone{background:#111;padding:12px;border-radius:42px;box-shadow:0 30px 80px rgba(0,0,0,.18);margin:30px 0}
+.screen{background:#000;border-radius:30px;padding:14px}
+.screen img{width:100%;border-radius:22px;display:block}
+.grid{display:grid;gap:16px;margin:42px 0}
+.card{background:rgba(255,255,255,.8);backdrop-filter:blur(20px);padding:22px;border-radius:26px;box-shadow:0 20px 50px rgba(0,0,0,.06)}
+.shots{display:flex;overflow:auto;gap:16px;padding-bottom:8px;scroll-snap-type:x mandatory}
+.shots img{width:180px;border-radius:26px;scroll-snap-align:start;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.cta{margin:60px 0;background:linear-gradient(135deg,#5b5df7,#58b7ff);color:#fff;padding:30px;border-radius:32px;text-align:center}
+footer{text-align:center;padding:50px;color:#94a3b8}
+.small{font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap" style="padding:0">
+<div class="logo">
+<img src="rhino-logo.png" alt="Rhino logo">
+<div>Rhino Works</div>
+</div>
+</div>
+</header>
+
+<div class="wrap">
+
+<span class="badge">Built for Stagehands • Touring • Live Events</span>
+
+<h1>Everything your <span class="grad">crew needs.</span></h1>
+
+<p>Rhino Works keeps your calls, venues, PDFs, calendars, payroll and schedules together in one fast, modern app.</p>
+
+<div class="store">
+<a href="#"> Download on the App Store</a>
+<a href="#">▶ Get it on Google Play</a>
+</div>
+
+<div class="phone">
+<div class="screen">
+<img src="screenshots/dashboard.png" alt="Dashboard">
+</div>
+</div>
+
+<div class="grid">
+<div class="card">📅 <strong>Smart Scheduling</strong><br><br>Stay on top of every call with a calendar built for live production.</div>
+<div class="card">📄 <strong>Venue PDFs</strong><br><br>Carry maps, instructions and paperwork everywhere.</div>
+<div class="card">👷 <strong>Crew Ready</strong><br><br>Calls, confirmations, locations and contacts in seconds.</div>
+</div>
+
+<h2>Screenshots</h2>
+<div class="shots">
+<img src="screenshots/login.png">
+<img src="screenshots/dashboard.png">
+<img src="screenshots/details.png">
+<img src="screenshots/calendar.png">
+</div>
+
+<div class="cta">
+<h2 style="margin-top:0">Download Rhino Works</h2>
+<p style="color:#eef">Available now on iPhone and Android.</p>
+<div class="store">
+<a href="#"> App Store</a>
+<a href="#">▶ Google Play</a>
+</div>
+</div>
+
+<p class="small"><strong>Assets to add:</strong> Place your white rhino logo beside this HTML as <code>rhino-logo.png</code>. Create a <code>screenshots/</code> folder containing <code>login.png</code>, <code>dashboard.png</code>, <code>details.png</code>, and <code>calendar.png</code>. The page is already wired to use them.</p>
+
+</div>
+
+<footer>© 2026 Rhino Works</footer>
+
+</body>
+</html>
